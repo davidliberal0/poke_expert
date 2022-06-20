@@ -1,18 +1,3 @@
-// const linksUn = querySelectorAll("#linku-n");
-// const linkSelected = querySelector("#link-selected");
-
-// const create = require("prompt-sync");
-
-// for (let links of linksUn) {
-//   link.addEventListener("mouseover", () => {
-//     link.style.color = "#f44336";
-//   });
-
-//   link.addEventListener("mouseleave", () => {
-//     link.style.color = "white";
-//   });
-// }
-
 const form = document.querySelector("#searchForm");
 
 // All Possible Types w/ Color Hex Values
