@@ -1,0 +1,10 @@
+._.DS_Store
+/node_modules
+.DS_Store
+._build
+._css
+._node_modules
+._images
+._scripts
+.config.js
+tailwind.css

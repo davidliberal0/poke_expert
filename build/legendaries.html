@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>PokeExpert - Database Search</title>
+    <link rel="stylesheet" href="tailwind.css" />
+    <link rel="stylesheet" href="./override.css" />
+    <script
+      src="https://kit.fontawesome.com/1272455367.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body class="legend-container">
+    <nav class="long-nav">
+      <div class="ml-4 mr-4">
+        <div class="sm:flex justify-between">
+          <!-- PokeExpert-Title  -->
+          <a href="./index.html" class="p-3"
+            ><h1 class="text-3xl text-white font-bold">
+              <span class="text-red-500">Poke</span>Expert.
+            </h1></a
+          >
+          <!-- Menus  -->
+          <ul
+            class="text-white sm:self-center border-t sm:border-none nav-links text-sm"
+          >
+            <li class="sm:inline-block" id="link-un">
+              <a href="#" class="p-3">region</a>
+            </li>
+            <li class="sm:inline-block" id="link-un">
+              <a href="#" class="p-3">tips</a>
+            </li>
+            <li class="sm:inline-block">
+              <a href="#" class="p-3" id="link-selected">legendaries</a>
+            </li>
+            <li class="sm:inline-block" id="link-un">
+              <a href="#" class="p-3">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="main-content">
+      <div class="container-one flex justify-center items-center flex-col">
+        <section class="heading mt-6 mb-6">
+          <div class="text-white font-bold text-6xl text-center w-auto">
+            <span class="text-red-500">Poke</span>Expert.
+          </div>
+          <div
+            class="text-white text-6xl font-bold text-center w-auto uppercase tracking-widest mt-3"
+          >
+            PokeDex Database
+          </div>
+        </section>
+        <section class="search-section">
+          <div class="oval-one">
+            <div class="oval-two">
+              <!-- <input
+                type="text"
+                placeholder="START LOOKING FOR LEGENDARIES..."
+                class="search-box"
+              /> -->
+              <form action="" id="searchForm">
+                <input
+                  type="text"
+                  placeholder="START LOOKING FOR POKEMON..."
+                  class="search-box"
+                  name="query"
+                />
+                <button>
+                  <i
+                    class="fa-solid fa-magnifying-glass text-white search-icon fa-2x"
+                  ></i>
+                </button>
+              </form>
+            </div>
+            <!-- <div>
+              <i
+                class="fa-solid fa-magnifying-glass text-white search-icon fa-2x"
+              ></i>
+            </div> -->
+          </div>
+        </section>
+        <h2 class="text-white mt-6 result-text">Results...</h2>
+      </div>
+    </section>
+    <!-- card content -->
+    <section class="rect-section text-white">
+      <div class="rect">
+        <img
+          src="./images/Legendaries/d7kktkh-2c59258c-d6f1-4be7-a033-4d93b55d491d.png"
+          alt=""
+          class="legendary-image mr-6"
+          id="pokemon-img"
+        />
+        <div class="rect-name-type mr-6">
+          <h3 id="pokemon-name"></h3>
+          <h3 id="dex-number"></h3>
+          <div id="type"></div>
+          <div id="type-two"></div>
+        </div>
+        <div id="poke-desc"></div>
+      </div>
+    </section>
+    <!--  end of card content -->
+    <footer class="flex justify-center items-center">
+      <div class="text-white">&copy;nightly.dev</div>
+    </footer>
+    <script src="./scripts/linkLogic.js"></script>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #0f0f0f;
+  /* margin: 50px; */
+  /* padding-left: 300px;
+  padding-right: 300px; */
+}
+
+.main-container {
+  padding: 120px;
+}
+
+.game {
+  background-color: rgb(20, 20, 22);
+}
+
+.nav-links li {
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  transition-property: font-size;
+  transition-duration: 0.2s;
+}
+
+.nav-links li:hover {
+  font-size: 23px;
+  color: #f15b5e;
+}
+
+.game {
+  transition: all 0.2s ease-in-out;
+}
+
+.game:hover {
+  transform: scale(1.1);
+}
+
+.game-img {
+  filter: grayscale(1);
+}
+
+.legend-container {
+  background-color: #151515;
+}
+
+.long-nav {
+  background-color: #000000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* .heading {
+  border: 2px solid red;
+} */
+
+.oval-one {
+  width: 1000px;
+  height: 50px;
+  /* border: 2px solid red; */
+  background-color: black;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.oval-two {
+  width: 930px;
+  height: 35px;
+  /* border: 2px solid blue; */
+  border-radius: 50px;
+  background-color: #222222ee;
+  margin-left: 6px;
+}
+
+input {
+  color: white;
+}
+
+input::placeholder {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.search-box {
+  width: 930px;
+  height: 35px;
+  /* border: 2px solid red; */
+  padding-left: 0.5rem;
+  /* border: 2px solid blue; */
+  border-radius: 50px;
+  background-color: #222222ee;
+  margin-left: 6px;
+}
+
+.search-icon {
+  /* border: 2px solid red; */
+  margin-left: 0.7rem;
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+}
+
+/* .main-content {
+  height: 80vh;
+  border: 2px solid red;
+} */
+
+.container-one {
+  height: 50vh;
+}
+
+form {
+  width: 1000px;
+  height: 35px;
+  display: flex;
+}
+
+.legendary-image {
+  height: 110px;
+  width: 110px;
+}
+
+.rect-section {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.rect {
+  padding: 2.5rem;
+  display: none;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 1200px;
+  margin-bottom: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.rect:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  height: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: black;
+  margin-top: 50px;
+}
+
+.result-text {
+  display: none;
+}
+
+#type {
+  text-align: center;
+  background-color: #f15b5e;
+  border-radius: 5px;
+  width: 4rem;
+}
+
+#type-two {
+  display: none;
+  margin-top: 3px;
+  text-align: center;
+  background-color: #f15b5e;
+  border-radius: 5px;
+  width: 4rem;
+}
+
+#poke-desc {
+  width: 898px;
+}
