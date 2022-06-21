@@ -18,6 +18,7 @@ const typeColor = {
   electric: "#ffee00",
   poison: "#772ff5",
   ice: "#14bbe0",
+  rock: "#AE964D",
 };
 
 // --------------
@@ -39,6 +40,7 @@ const rgbas = {
   electric: "rgba(255, 238, 0,",
   poison: "rgba(119, 47, 245,",
   ice: "rgba(20, 187, 224,",
+  rock: "rgba(174, 150, 77,",
 };
 
 const card = document.querySelector(".rect");
